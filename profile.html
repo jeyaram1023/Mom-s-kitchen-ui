@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Moms Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container profile-container">
+        <h2>Your Profile</h2>
+        <form id="profile-form">
+            <img src="https://via.placeholder.com/100" alt="Profile Image" class="profile-image" id="profile-image">
+            <input type="text" id="user-name" placeholder="👤 User Name" required>
+            <input type="tel" id="mobile-number" placeholder="📞 Mobile Number" required>
+            
+            <div id="map" style="height: 150px; width: 100%; margin-top: 15px;"></div>
+
+            <button type="submit" class="profile-modify-btn">Modify Profile</button>
+            <a href="https://www.google.com" target="_blank" class="help-btn">Help</a>
+        </form>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">🏠 Home</a>
+        <a href="profile.html" class="nav-item active">👤 Profile</a>
+        <a href="add_seller.html" class="nav-item">➕ Add Seller</a>
+    </nav>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase_config.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
