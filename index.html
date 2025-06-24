@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Moms Kitchen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="soft-white-bg">
+    <div class="container welcome-container">
+        <h1>Welcome to Moms Kitchen</h1>
+        <div id="welcome-notification" class="notification">
+            Welcome! Please tell us a bit about yourself.
+        </div>
+        <form id="user-form">
+            <input type="text" id="user-name" placeholder="👤 User Name" required>
+            <input type="tel" id="mobile-number" placeholder="📞 Mobile Number" required>
+            <input type="text" id="pincode" placeholder="Pincode" required>
+
+            <div id="map" style="height: 150px; width: 100%; margin-top: 15px;"></div>
+            <p>Your Location:</p>
+            <p>Latitude: <span id="latitude"></span></p>
+            <p>Longitude: <span id="longitude"></span></p>
+
+            <button type="submit" class="submit-btn">Save Profile</button>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase_config.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
